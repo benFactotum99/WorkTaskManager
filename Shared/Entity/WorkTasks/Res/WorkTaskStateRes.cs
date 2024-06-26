@@ -1,12 +1,13 @@
 ﻿using Infrastructure.Persistence.Entity;
 using Shared.Entity.WorkTasks.Req;
+using Shared.Entity.WorkTaskStates.Req;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shared.Entity.WorkTasks.Res
+namespace Shared.Entity.WorkTaskStates.Res
 {
     public partial class WorkTaskStateRes
     {

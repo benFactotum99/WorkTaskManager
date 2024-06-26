@@ -3,6 +3,7 @@ using Newtonsoft.Json.Linq;
 using Shared.Entity.Projects.Req;
 using Shared.Entity.Projects.Res;
 using Shared.Entity.WorkTasks.Req;
+using Shared.Entity.WorkTaskStates.Res;
 using System;
 using System.Collections.Generic;
 using System.Linq;

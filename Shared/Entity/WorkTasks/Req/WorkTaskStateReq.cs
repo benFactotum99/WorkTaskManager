@@ -1,12 +1,14 @@
 ﻿using Infrastructure.Persistence.Entity;
+using Shared.Entity.WorkTasks.Req;
 using Shared.Entity.WorkTasks.Res;
+using Shared.Entity.WorkTaskStates.Res;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shared.Entity.WorkTasks.Req
+namespace Shared.Entity.WorkTaskStates.Req
 {
     public partial class WorkTaskStateReq
     {
@@ -16,8 +18,8 @@ namespace Shared.Entity.WorkTasks.Req
 
     public static class WorkTaskStateReqMap
     {
-        public static WorkTaskStateReq MapToReqDto(this WorkTaskStateRes value) => MapToReqDto(value, new WorkTaskStateReq());
-        public static WorkTaskStateReq MapToReqDto(this WorkTaskStateRes value, WorkTaskStateReq element)
+        public static WorkTaskState MapDto(this WorkTaskStateReq value) => MapDto(value, new());
+        public static WorkTaskState MapDto(this WorkTaskStateReq value, WorkTaskState element)
         {
             element.Description = value.Description;
             return element;

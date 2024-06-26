@@ -1,5 +1,6 @@
 ﻿using Infrastructure.Persistence.Entity;
 using Shared.Entity.WorkTasks.Res;
+using Shared.Entity.WorkTaskStates.Req;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,9 +16,9 @@ namespace Shared.Entity.WorkTasks.Req
     }
 
     public static class WorkTaskTypeReqMap
-    {  
-        public static WorkTaskTypeReq MapToReqDto(this WorkTaskTypeRes value) => MapToReqDto(value, new WorkTaskTypeReq());
-        public static WorkTaskTypeReq MapToReqDto(this WorkTaskTypeRes value, WorkTaskTypeReq element)
+    {
+        public static WorkTaskType MapDto(this WorkTaskTypeReq value) => MapDto(value, new());
+        public static WorkTaskType MapDto(this WorkTaskTypeReq value, WorkTaskType element)
         {
             element.Description = value.Description;
             return element;
