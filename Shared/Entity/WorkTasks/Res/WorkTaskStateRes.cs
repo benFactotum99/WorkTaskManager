@@ -1,4 +1,5 @@
 ﻿using Infrastructure.Persistence.Entity;
+using Shared.Entity.WorkTasks.Req;
 using System;
 using System.Collections.Generic;
 using System.Linq;

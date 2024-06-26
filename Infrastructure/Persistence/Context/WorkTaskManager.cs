@@ -41,7 +41,7 @@ public partial class WorkTaskManager : DbContext
     public virtual DbSet<WorkTaskState> WorkTaskStates { get; set; }
 
     public virtual DbSet<WorkTaskType> WorkTaskTypes { get; set; }
-
+        
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<AspNetRole>(entity =>
